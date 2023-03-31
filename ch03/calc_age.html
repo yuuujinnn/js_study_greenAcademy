@@ -11,6 +11,9 @@
             margin: 0 auto;
             text-align: center;
         }
+        p{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -28,12 +31,15 @@
             let birthYear = prompt("출생 년도를 입력하세요", "yyyy");
             let age; //할당 안함
 
+            // isNaN(문자) -> true
+            // 취소 - null 또는 문자 입력시 isNaN()
             if(birthYear === null || isNaN(birthYear)){
                 document.getElementById("show").innerHTML = "입력이 취소되었습니다."
             }
             else{
                 age = CURRENT_YEAR - parseInt(birthYear) + 1;
-                document.getElementById("show").innerHTML = age; 
+                document.getElementById("show").innerHTML = 
+                "당신의 나이는 " + age + "세 이군요"; 
             }
         }
     </script>
