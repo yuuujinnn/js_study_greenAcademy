@@ -10,19 +10,20 @@
     <img src="images/cup-1.png" alt="컵" id="pic">
 
     <script>
-        let pic = document.getElementById("pic");
+       let pic = document.getElementById("pic");
 
-        // pic 객체의 onclick 속성 사용
-        pic.onclick = changePic;  //함수 호출(함수 괄호가 생략됨)
+       //pic 객체의 onclick 속성 사용
+       pic.onclick = changePic;  //함수 호출(함수 괄호가 생략됨)
 
-        function changePic(){
-            pic.src = "images/cup-2.png";
-        }
+       function changePic(){
+         pic.src = "images/cup-2.png";
+       }
 
-        // 익명 함수로 호출
-        /* pic.onmouseover = function(){
-            pic.src = "images/cup-2.png";
-        } */
+       //익명 함수로 호출
+       /*pic.onclick = function(){
+          pic.src = "images/cup-2.png";
+       }*/
+
     </script>
 </body>
 </html>

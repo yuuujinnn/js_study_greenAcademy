@@ -4,24 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 추첨</title> 
-    <style>
-      section{
-        width: 800px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      h1{
-        background-color: #eee;
-        border: 1px solid #ccc;
-        display: inline-block;
-        padding: 10px 20px;
-      }
-      p{text-align: center;}
-    </style>
+    <title>lotto 복권 추첨</title>
 </head>
 <body>
-  <section>
+    <section>
         <h1>로또 추첨 번호</h1>
     </section>
 
@@ -35,7 +21,7 @@
             lotto[i] = num;      //로또 배열에 저장
             console.log(lotto);
 
-            //중복 제거
+            // 중복 제거
             for(let j = 0; j < i; j++){
                 if(lotto[j] == lotto[i]){
                     console.log("중복 번호 : " + lotto[i])
@@ -46,7 +32,12 @@
 
         //출력
         for(let i = 0; i < lotto.length; i++){
-            document.write(lotto[i] + ", ");
+            if(i == lotto.length-1){ 
+                    document.write(lotto[i] + "");
+                }
+                else{
+                    document.write(lotto[i] + ", ");
+                }
         }
         document.write("</p>");
     </script>

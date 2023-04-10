@@ -10,21 +10,20 @@
     <img src="images/cup-1.png" alt="컵" id="pic">
 
     <script>
-        // 토글 방식의 클릭 이벤트
-        let pic = document.getElementById("pic");
+      //토글 방식의 클릭 이벤트 효과
+       let pic = document.getElementById("pic");
 
-        let state = true;
+       let state = true;  //상태 변수
 
-        pic.onclick = function(){
-            if(state){
-                pic.src = "images/cup-2.png";
-                state = false;
-            }
-            else{
-                pic.src = "images/cup-1.png"
-                state = true;
-            }
-        }
+       pic.onclick = function(){
+          if(state){ //state == true
+            pic.src = "images/cup-2.png";
+            state = false;
+          }else{
+            pic.src = "images/cup-1.png";
+            state = true;
+          }
+       }
 
     </script>
 </body>
